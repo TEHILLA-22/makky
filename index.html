@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tehilla Loves|| Makky</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-<audio src="makky.mp3" loop autoplay></audio>
 
     <div class="header">
         <header class="head">
@@ -21,6 +20,32 @@
         </header>
     </div>
 
+
+     <!-- Audio Element (Hidden) -->
+      <div class="audio">
+ <audio id="song" src="makky.mp3" loop autoplay></audio>
+ <img src="entouch.png" id="playImage" width="35%" height="auto" style="animation: tada .6s infinite;" onclick="playsound('makky.mp3')"/>
+ <p>TOUCH ME</p>
+ </div>
+ </a>
+ 
+ <script>
+   // Select the image and audio elements
+ const playImage = document.getElementById("playImage");
+ const song = document.getElementById("song");
+ 
+ // Toggle play/pause on image click
+ playImage.addEventListener("click", () => {
+     if (song.paused) {
+         song.play(); // Play the song
+         playImage.src = "entouch.png"; // Change to pause icon
+     } else {
+         song.pause(); // Pause the song
+         playImage.src = "entouch.png"; // Change back to play icon
+     }
+ });
+ 
+ </script>
 
 
     <div class="slider">
@@ -32,7 +57,8 @@
                
             </div>
         </div>
-h
+        
+
         <!-- Slide 2: U - Unstoppable -->
         <div class="slide" style="background-color: #4ca500;">
             <img src="mak (2).png" alt="Tulip Image 2">

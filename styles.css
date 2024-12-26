@@ -27,6 +27,13 @@ body {
 .m2{position:fixed;right:0.5%; width:auto;height:100%;top:1%;color:#000;}
 
 
+.audio img {
+    width: 2%;
+}
+
+.audio p {
+    font-size: 10px;
+}
 
 .slider {
     display: flex;
